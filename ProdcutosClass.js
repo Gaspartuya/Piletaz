@@ -4,5 +4,9 @@ class Producto {
         this.nombre = nombre
         this.importe = importe
         this.categoria = categoria
+    }
+    precioFinal () {
+        return "$ " + parseFloat ((this.importe * IVA).toFixed(2))
+    }
 
 }

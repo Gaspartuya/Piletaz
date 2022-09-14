@@ -9,6 +9,7 @@
     <script src="./variables.js"></script>
     <script defer src="./arrays.js"></script>
     <script src="./ProdcutosClass.js"></script>
+    <script defer src="./DOM.js"></script>
 </head>
 <body>
     <h1>Piletaz</h1>
@@ -16,7 +17,7 @@
     <br></br>
     <br></br>
 
-    <input type="text">
+    <input type="search" size="30" id="filtroProducto" placeholder="Ingresa el producto a buscar">
     <br></br>
     <table class="table table-bordered">
         <thead>
@@ -27,8 +28,8 @@
             <th>Categoria</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody  id="tabla">
+          <!-- <tr>
             <th scope="row">1</th>
             <td>Metal Frame Rotonda</td>
             <td>29950</td>
@@ -45,12 +46,11 @@
             <td>Metal Frame Retangolare</td>
             <td>199949</td>
             <td>rotonda</td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
-
-      <button type="button" class="btn btn-lg btn-primary" disabled>Agregar Produto</button>
-<a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Quitar Producto</a>
+      <button type="button" id="agregar-producto" class="btn btn-lg btn-primary" disabled>Agregar Produto</button>
+<a href="#" class="btn btn-primary btn-lg disabled" id="quitar-producto" role="button" aria-disabled="true">Quitar Producto</a>
 
 
 
